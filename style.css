@@ -5,6 +5,9 @@ body{
     background-color:#FAFAFA;
 }
 
+p{
+    margin: 0px;
+}
 .header{
     width: 100%;
     height: 75px;
@@ -89,6 +92,12 @@ body{
     background-color: #FFF;
     display: flex;
 }
+.main-content-header-div .dot{
+    font-size: 25px;
+    margin-left: 78%;
+    margin-top: 2%;
+    text-decoration: none;
+}
 
 .main-content-header-div a {
     margin: 25px 0 0 15px;
@@ -128,9 +137,11 @@ body{
 
 .right-wrapper{
     width: 400px;
-    height: 60px;
     display: none;
     margin-top: 55px;
+    position: sticky;
+    top: 0px;
+    
 }
 
 .user-wrapper-two{
@@ -145,7 +156,6 @@ body{
     width: 100%;
     height: 160px;
     border: 1px solid #D5DBDB;
-    overflow-y: scroll;
     border-top: none;
     background-color: #FFF;
 }
@@ -221,6 +231,14 @@ body{
 .friendsAvatar {
     display: flex;
     margin-bottom: 10px;
+}
+
+.friendsAvatar a{
+    font-size: 10px;
+    color: blue;
+    margin-top: 15px;
+    margin-left: 50px;
+    text-decoration: none;
 }
 .friendsDetails{
     border: 2px solid tomato;
@@ -427,6 +445,8 @@ body{
     .right-wrapper{
         display: unset;
         margin-left: 5px;
+        position: -webkit-sticky;
+        position: sticky;
     }
 
 }
