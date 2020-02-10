@@ -67,6 +67,11 @@ p{
     border: 1px solid #D5DBDB;
     display: flex;
     overflow: hidden;
+    scroll-behavior: auto;
+    overflow-x: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    
 }
 
 .user-avatar {
@@ -139,8 +144,7 @@ p{
     width: 400px;
     display: none;
     margin-top: 55px;
-    position: sticky;
-    top: 0px;
+    height: 600px;
     
 }
 
@@ -432,7 +436,8 @@ p{
     .main {
         width: 912px;
         display: flex;
-        margin: auto;        
+        margin: auto;    
+        position: relative;    
     }
 
     .main-content-div{
@@ -447,6 +452,8 @@ p{
         margin-left: 5px;
         position: -webkit-sticky;
         position: sticky;
+        top: 0;
+    
     }
 
 }
